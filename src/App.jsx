@@ -13,21 +13,20 @@ function App() {
     );
   };
 
-  // Handle the drag end event to reorder the products array
+
   const onDragEnd = (result) => {
     // If there's no destination, do nothing
     if (!result.destination) return;
 
-    // Clone the current products to avoid direct state mutation
+    
     const reorderedProducts = Array.from(products);
 
-    // Remove the dragged item and store it
+    
     const [movedProduct] = reorderedProducts.splice(result.source.index, 1);
 
-    // Insert the dragged item at its new position
+ 
     reorderedProducts.splice(result.destination.index, 0, movedProduct);
 
-    // Update the state with the new order of products
     setProducts(reorderedProducts);
   };
 
