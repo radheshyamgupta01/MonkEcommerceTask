@@ -91,45 +91,45 @@ section input {
   padding: 10px;
   overflow-y: scroll;
   height: 500px;
-  width: 100%; /* Ensures the list takes full width */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
-/* Container for checkbox to align and space properly */
+
 .checkbox-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between checkbox and label */
-  margin-bottom: 10px; /* Space between checkbox groups */
-  width: 100%; /* Ensures the container takes full width */
-  padding: 10px 0; /* Optional: Add vertical padding for better spacing */
-  border-bottom: 1px solid #ccc; /* Light border for separation */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  gap: 10px; 
+  margin-bottom: 10px; 
+  width: 100%; 
+  padding: 10px 0; 
+  border-bottom: 1px solid #ccc; 
+  box-sizing: border-box; 
 }
 
-/* Hide the default checkbox */
+
 .checkbox-container input[type="checkbox"] {
-  appearance: none; /* Remove default appearance */
+  appearance: none; 
   width: 20px;
   height: 20px;
-  border: 2px solid #007bff; /* Blue border color */
-  border-radius: 4px; /* Rounded corners */
+  border: 2px solid #007bff; 
+  border-radius: 4px; 
   outline: none;
   cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+  transition: background-color 0.3s, border-color 0.3s; 
 }
 
-/* Checked state styling */
+
 .checkbox-container input[type="checkbox"]:checked {
-  background-color: #007bff; /* Blue background when checked */
-  border-color: #007bff; /* Border matches background when checked */
+  background-color: #007bff; 
+  border-color: #007bff; 
 }
 
-/* Custom checkmark using :after pseudo-element */
+
 .checkbox-container input[type="checkbox"]:checked::after {
-  content: "✓"; /* Checkmark symbol */
-  color: white; /* White color for checkmark */
-  font-size: 16px; /* Size of the checkmark */
+  content: "✓"; 
+  color: white; 
+  font-size: 16px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +139,7 @@ section input {
 
 /* Hover effect */
 .checkbox-container input[type="checkbox"]:hover {
-  border-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3; 
 }
 
 .checkbox-container img {
@@ -150,106 +150,86 @@ section input {
 
 /* Label styling */
 .checkbox-container label {
-  font-size: 16px; /* Font size of the label */
-  color: #333; /* Text color */
-  cursor: pointer; /* Pointer cursor on label */
+  font-size: 16px; 
+  color: #333; 
+  cursor: pointer; 
 }
 
 .product-container {
-  border-bottom: 1px solid #ccc; /* Separates each product visually */
-  padding: 10px 0; /* Spacing between products */
+  border-bottom: 1px solid #ccc; 
+  padding: 10px 0; 
 }
 
 .variants-list {
-  padding-left: 20px; /* Indents variants under their parent product */
-  margin-top: 10px; /* Adds space above the variants list */
+  padding-left: 20px; 
+  margin-top: 10px; 
 }
 .discount-inputs {
   display: flex;
-  gap: 10px; /* Adds space between the input and select elements */
+  gap: 10px; 
 }
 
 .discount-inputs input,
 .discount-inputs select {
-  padding: 8px; /* Adds padding inside the input and select elements */
-  border: 1px solid #ccc; /* Adds a light gray border */
-  border-radius: 4px; /* Rounds the corners */
-  font-size: 14px; /* Sets the font size */
-  outline: none; /* Removes the outline when focused */
-  width: 100%; /* Allows them to take up the full width inside the container */
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  font-size: 14px; 
+  outline: none; 
+  width: 100%;  
 }
 
 .discount-inputs input:focus,
 .discount-inputs select:focus {
-  border-color: #007bff; /* Changes the border color on focus */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adds a subtle shadow on focus */
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
-/* .list-of-variants button {
-  border: none;
-  text-decoration: underline;
-  background: none;
-  cursor: pointer;
-  margin-bottom: 5px;
-}
-.list-of-variants button:hover {
-  color: #007bff;
-}
 
-.list-of-variants li {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.list-of-variants p {
-  font-size: 0.9rem;
-} */
 
 .list-of-variants {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .list-of-variants li {
-  display: flex; /* Arrange items horizontally */
-  justify-content: space-between; /* Distribute space between elements */
-  align-items: center; /* Center items vertically */
-  padding: 10px 15px; /* Add some space around items */
-  border: 1px solid #ddd; /* Light border for separation */
-  border-radius: 5px; /* Rounded corners */
-  margin-bottom: 10px; /* Space between list items */
-  background-color: #f9f9f9; /* Light background color */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 15px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  margin-bottom: 10px; 
+  background-color: #f9f9f9; 
+  transition: background-color 0.3s; 
 }
 
 .list-of-variants li:hover {
-  background-color: #eaeaea; /* Slightly darker on hover */
+  background-color: #eaeaea; 
 }
 
 .list-of-variants p {
-  margin: 0; /* Remove margin from paragraphs */
-  font-size: 16px; /* Adjust font size */
-  color: #333; /* Dark text color */
+  margin: 0; 
+  font-size: 16px; 
+  color: #333; 
 }
 
 .list-of-variants p span {
-  margin-left: 10px; /* Space between title and span */
+  margin-left: 10px; 
   color: #666;
-  font-size: 14px; /* Lighter color for additional text */
+  font-size: 14px; 
 }
 
 .list-of-variants button {
-  font-size: 14px; /* Font size for button */
-  background: none; /* Primary button color */
-  border: none; /* Remove default border */
-  cursor: pointer; /* Pointer cursor on hover */
-  /* Smooth transition for hover effect */
+  font-size: 14px; 
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  
   text-decoration: underline;
 }
 
 .list-of-variants button:hover {
-  color: #0056b3; /* Darker shade on hover */
+  color: #0056b3; 
 }
