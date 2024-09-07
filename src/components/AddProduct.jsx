@@ -32,7 +32,7 @@ const AddProduct = ({ index, itemOfProduct, onDeleteProduct }) => {
 
   // console.log(itemOfProduct.variants.length === 1);
 
-  // Function to find the product with matching variants
+  
 
   // useEffect to update product variants when the criteria or products change
   useEffect(() => {
